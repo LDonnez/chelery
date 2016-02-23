@@ -29,6 +29,7 @@ class PhotoDashboard < Administrate::BaseDashboard
     :projects,
     :id,
     :title,
+    :photo,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
