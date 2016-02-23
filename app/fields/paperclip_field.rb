@@ -2,12 +2,28 @@ require "administrate/fields/base"
 
 class PaperclipField < Administrate::Field::Base
 
-  def url
-    data.url
+  def url(type)
+    if type
+      data.url(type)
+    else
+      data.url
+    end
   end
 
   def thumbnail
     data.url(:thumbnail)
+  end
+
+  def medium
+    data.url(:medium)
+  end
+
+  def large
+    data.url(:medium)
+  end
+
+  def original
+    data.url
   end
 
   def to_s
