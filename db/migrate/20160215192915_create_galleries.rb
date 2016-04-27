@@ -1,6 +1,6 @@
-class CreateProjects < ActiveRecord::Migration
+class CreateGalleries < ActiveRecord::Migration
   def change
-    create_table :projects do |t|
+    create_table :galleries do |t|
       t.string :title
       t.text :description
       t.timestamps 

@@ -1,3 +1,3 @@
-class Project < ActiveRecord::Base
+class Gallery < ActiveRecord::Base
  has_and_belongs_to_many :photos, dependent: :destroy
 end

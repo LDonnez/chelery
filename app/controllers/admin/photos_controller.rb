@@ -33,6 +33,6 @@ module Admin
   private
 
   def photo_params
-    params.require(:photo).permit({ project_ids: [] }, :title)
+    params.require(:photo).permit({ gallery_ids: [] }, :title)
   end
 end
