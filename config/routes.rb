@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :galleries
+  root "main#index"
   namespace :admin do
     DashboardManifest::DASHBOARDS.each do |dashboard_resource|
       resources dashboard_resource
