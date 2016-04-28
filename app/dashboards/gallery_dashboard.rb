@@ -30,6 +30,7 @@ class GalleryDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :title,
     :description,
+    :photos,
   ]
 
   # FORM_ATTRIBUTES
@@ -44,7 +45,7 @@ class GalleryDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how reservations are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(reservation)
-  #   "Reservation ##{reservation.id}"
-  # end
+   def display_resource(gallery)
+     "#{gallery.title}"
+   end
 end

@@ -10,6 +10,7 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
+    email: Field::String,
     password_digest: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
@@ -22,8 +23,7 @@ class UserDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :name,
-    :password_digest,
+    :email,
     :created_at,
   ]
 
@@ -31,8 +31,7 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :name,
-    :password_digest,
+    :email,
     :created_at,
     :updated_at,
   ]
@@ -41,8 +40,7 @@ class UserDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :name,
-    :password_digest,
+    :email,
   ]
 
   # Overwrite this method to customize how users are displayed
