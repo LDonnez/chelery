@@ -1,3 +1,10 @@
-<% @galleries.each do |g| %>
-  <%= g.title %>
-<%end %>
+<section id="header" class="header" style="background-image: url('<%=@settings.header_image.url(:large)%>')">
+</section>
+<section id="galleries" class="small-up-1 medium-up-2 large-up-4">
+  <% @galleries.each do |g| %>
+    <div class="column">
+      <%= image_tag g.photos.first.photo(:medium)%>
+      <%= label_tag g.title %>
+    </div>
+  <% end %>
+</section>
