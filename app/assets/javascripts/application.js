@@ -18,7 +18,7 @@
 var ready = function() {
   $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 0) {
       $('.main-menu').addClass('sticky');
     } else {
       $('.main-menu').removeClass('sticky');
