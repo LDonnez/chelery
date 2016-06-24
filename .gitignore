@@ -11,3 +11,5 @@
 /log/*
 !/log/.keep
 /tmp
+/assets/fonts/*
+/public/images/*
