@@ -11,7 +11,7 @@ module ApplicationHelper
     if params[:controller] == "main"
       link_to "Gallery", "#galleries"
     else
-      link_to "Gallery", :back
+      link_to "Gallery", "#{root_url}#galleries"
     end
   end
 end
