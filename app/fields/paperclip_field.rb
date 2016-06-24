@@ -17,7 +17,7 @@ class PaperclipField < Administrate::Field::Base
   end
 
   def large
-    data.url(:large)
+    data.url(:medium)
   end
 
   def original

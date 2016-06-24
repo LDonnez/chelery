@@ -11,9 +11,7 @@ class SettingDashboard < Administrate::BaseDashboard
     id: Field::Number,
     headline: Field::String,
     subline: Field::String,
-    header_column_1: TextareaField,
-    header_column_2: TextareaField,
-    header_column_3: TextareaField,
+    header_text: TextareaField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     header_image: Field::ImageField,
@@ -39,9 +37,7 @@ class SettingDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :headline,
     :subline,
-    :header_column_1,
-    :header_column_2,
-    :header_column_3,
+    :header_text,
     :created_at,
     :updated_at,
     :header_image,
@@ -53,9 +49,7 @@ class SettingDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :headline,
     :subline,
-    :header_column_1,
-    :header_column_2,
-    :header_column_3,
+    :header_text,
     :header_image,
   ]
 

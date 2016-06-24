@@ -9,24 +9,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header class="main-menu">
-      <div class="mobile-row">
-        <a class="logo" href="#">MM</a>
-        <div class="mobile-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#sec01">Section 01</a></li>
-            <li><a href="#galleries">Galleries</a></li>
-            <li><a href="#sec03">Section 03</a></li>
-            <li><a href="#sec04">Section 04</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'layouts/navigation'%>
     <%= yield %>
+    <%= render 'layouts/footer'%>
   </body>
 </html>
