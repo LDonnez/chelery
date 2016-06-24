@@ -1,0 +1,7 @@
+<% if @photo.new_record? %>
+  <% @photo.errors.full_messages.each do |msg| %>
+    $("#errors").append("<%= escape_javascript(msg) %>")
+  <% end %> 
+<% else %>
+  $("#photos").append("<%= escape_javascript(render @photo) %>")
+<% end %>
