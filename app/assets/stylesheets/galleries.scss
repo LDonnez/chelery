@@ -1,3 +1,14 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.photo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  height: 100%;
+  margin: 0;
+  z-index: -1;
+  background: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
