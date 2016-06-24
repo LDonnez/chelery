@@ -59,9 +59,7 @@ ActiveRecord::Schema.define(version: 20160608230331) do
   create_table "settings", force: :cascade do |t|
     t.string   "headline"
     t.string   "subline"
-    t.text     "header_column_1"
-    t.text     "header_column_2"
-    t.text     "header_column_3"
+    t.text     "header_text"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.string   "header_image_file_name"
