@@ -11,7 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
-/assets/fonts/*
+/app/assets/fonts
 /public/system/photos
 /public/system/settings
 deploy.rb
