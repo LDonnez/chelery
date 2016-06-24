@@ -12,4 +12,5 @@
 !/log/.keep
 /tmp
 /assets/fonts/*
-/public/images/*
+/public/system/photos
+/public/system/settings
