@@ -10,6 +10,11 @@
   src: url('/assets/brandon-light.otf');
 }
 
+@font-face {
+  font-family: 'brandon-thin';
+  src: url('/assets/brandon-thin.otf');
+}
+
 .header {
   width: 100%;
   margin-left: auto;
@@ -43,14 +48,14 @@
 }
 
 h1 {
-  font-family: "brandon-light";
+  font-family: "brandon-thin";
   text-align: center;
   font-size: 6em;
 }
 
 h2 {
   font-weight: 100;
-  font-family: "brandon-light";
+  font-family: "brandon-thin";
   text-align: center;
   font-size: 4em;
   margin-top: 0.5em;
@@ -58,7 +63,7 @@ h2 {
 
 h3 {
   font-weight: 100;
-  font-family: "helvetica-light";
+  font-family: "brandon-light";
   text-align: center;
   font-size: 3em;
   margin-top: 0.5em;
@@ -66,7 +71,7 @@ h3 {
 
 p {
   font-weight: 100;
-  font-family: "brandon-light";
+  font-family: "brandon-thin";
   font-size: 1.5em;
 }
 
