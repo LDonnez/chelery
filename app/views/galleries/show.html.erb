@@ -1,3 +1,28 @@
-<% @photos.each do |p| %>
-  <div id="photo" class="photo" style="background-image: url('<%=p.photo(:original)%>')"> </div> 
-<% end %>
+<section class="gallery">
+  <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+  <div id="links">
+    <div class="row small-up-1 medium-up-2 large-up-4">
+      <% @photos.each do |p| %>
+        <a href="<%= p.photo(:original) %>" title="<%= p.title %>">
+          <img src="<%= p.photo(:thumbnail) %>" alt="<%= p.title %>">
+        </a>
+      <% end %>
+    </div>
+  </div>
+</section>
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+      container: '#blueimp-gallery-carousel',
+      carousel: true
+    }
+    );
+</script>
