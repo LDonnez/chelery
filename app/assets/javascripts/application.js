@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require blueimp-gallery-all
 //= require_tree .
 var ready = function() {
   $(window).scroll(function() {

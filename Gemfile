@@ -28,6 +28,7 @@ gem "devise"
 gem 'foundation-rails'
 gem 'capistrano-passenger'
 gem 'ckeditor'
+gem 'blueimp-gallery'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
