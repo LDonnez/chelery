@@ -14,14 +14,17 @@
 <section id="galleries" class="galleries">
   <h3>GALLERY<h3>
       <div class="row small-up-1 medium-up-2 large-up-4">
+        <hr>
         <% @galleries.each do |g| %>
           <div class="column">
             <%= link_to g do%>
-              <%= image_tag g.photos.first.photo(:medium) %>
-              <%= label_tag g.title %>
+              <%= image_tag g.photos.first.photo(:medium), class: "gallery-photo" %>
+              <%= label_tag g.title, nil, class: "photo-title" %>
             <% end %>
             </a>
           </div>
         <% end %>
+        <hr>
       </div>
 </section>
+
