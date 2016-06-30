@@ -255,7 +255,7 @@ DEPENDENCIES
   ckeditor
   coffee-rails (~> 4.1.0)
   devise
-  foundation-rails
+  foundation-rails (~> 6.2.3.0)
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.3)
