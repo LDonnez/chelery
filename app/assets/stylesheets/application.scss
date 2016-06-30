@@ -11,10 +11,9 @@
  * file per style scope.
  *
  *= require blueimp-gallery-all
- *= require_tree . 
- *= require_self 
- *= _require foundation_and_overrides 
- */
+ *= require_tree .
+ *= require_self
+*/
 
 body, html {
   margin: 0 auto;
