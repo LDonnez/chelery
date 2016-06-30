@@ -13,7 +13,7 @@
  *= require blueimp-gallery-all
  *= require_tree . 
  *= require_self 
- *= require foundation_and_overrides 
+ *= _require foundation_and_overrides 
  */
 
 body, html {
