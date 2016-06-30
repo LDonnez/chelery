@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require blueimp-gallery-all
- *= require foundation_and_overrides
  *= require_self
  */
+@import 'foundation_and_overrides';
 @import 'main';
 
 body, html {
