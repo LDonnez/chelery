@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "paperclip", "~> 4.3"
 gem "devise"
-gem "bourbon"
 gem 'foundation-rails'
 gem 'capistrano-passenger'
 gem 'ckeditor'
