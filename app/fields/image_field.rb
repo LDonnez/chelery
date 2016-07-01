@@ -1,3 +1,5 @@
+require "administrate/field/base"
+
 class ImageField < Administrate::Field::Base
 
   def url(type)
