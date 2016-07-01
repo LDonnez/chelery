@@ -22,10 +22,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'foundation-rails'
 gem "paperclip", "~> 4.3"
 gem "devise"
-gem 'foundation-rails', "~> 6.2.3.0"
+gem "bourbon"
 gem 'capistrano-passenger'
 gem 'ckeditor'
 gem 'blueimp-gallery'

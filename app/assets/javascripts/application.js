@@ -18,8 +18,8 @@
 //= require_tree .
 var ready = function() {
   $(window).scroll(function() {
-
-    if ($(window).scrollTop() > 0) {
+      debugger;
+    if ($(window).scrollTop() > 100) {
       $('.main-menu').addClass('sticky');
     } else {
       $('.main-menu').removeClass('sticky');

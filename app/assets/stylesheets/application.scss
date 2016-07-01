@@ -12,8 +12,10 @@
  *
  *= require blueimp-gallery-all
  *= require_self
+ *= require foundation_and_overrides
  *= require_tree .
 */
+
 body, html {
   margin: 0 auto;
   background-color: #F5F5FF;
