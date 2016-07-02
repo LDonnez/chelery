@@ -25,6 +25,6 @@ module Chelery
 
     # Change engine to js instead of coffee
     config.generators.javascript_engine = :js
-    app.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
   end
 end
