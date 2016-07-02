@@ -13,6 +13,5 @@
 /tmp
 /public/system/photos
 /public/system/settings
- /assets/fonts/*
 deploy.rb
 deploy/
