@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'helvetica-light';
   font-weight: 200;
-  src: font_url('helvetica-light.woff');
+  src: url('helvetica-light.woff');
 }
 
 
 @font-face {
   font-family: 'brandon-light';
-  src: font_url('brandon-light.otf');
+  src: url('brandon-light.otf');
 }
 
 @font-face {
   font-family: 'brandon-thin';
-  src: font_url('brandon-thin.otf');
+  src: url('brandon-thin.otf');
 }
 
 .header {
