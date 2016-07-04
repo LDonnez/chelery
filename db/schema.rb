@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160704174946) do
     t.string   "twitter_url"
     t.string   "github_url"
     t.string   "instagram_url"
+    t.string   "linkedin_url"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

@@ -49,7 +49,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: black,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -139,8 +139,6 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -307,7 +305,6 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $medium-gray;
@@ -380,7 +377,6 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: map-get($foundation-palette, primary);
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter

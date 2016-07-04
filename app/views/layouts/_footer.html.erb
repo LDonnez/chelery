@@ -1,6 +1,11 @@
 <footer id="contact" class="contact">
-
-<div style="height: 2em; width: 2em"><i class="fi-[social-facebook]"></i></div>
-
-
+  <h3>CONTACT</h3>
+      <div class="row">
+        <div class="small-3 small-centered columns">
+          <%= link_to fa_icon("facebook 4x"), @contact.facebook_url if @contact.facebook_url.present? %>
+          <%= link_to fa_icon("twitter 4x"), @contact.twitter_url if @contact.twitter_url.present? %>
+          <%= link_to fa_icon("github 4x"), @contact.github_url if @contact.github_url.present? %>
+          <%= link_to fa_icon("instagram 4x"), @contact.instagram_url if @contact.instagram_url.present? %>
+        </div>
+      </div>
 </footer>

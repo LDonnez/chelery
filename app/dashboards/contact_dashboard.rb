@@ -12,6 +12,7 @@ class ContactDashboard < Administrate::BaseDashboard
     twitter_url: Field::String,
     github_url: Field::String,
     instagram_url: Field::String,
+    linkedin_url: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -33,6 +34,7 @@ class ContactDashboard < Administrate::BaseDashboard
     :twitter_url,
     :github_url,
     :instagram_url,
+    :linkedin_url,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -43,6 +45,7 @@ class ContactDashboard < Administrate::BaseDashboard
     :twitter_url,
     :github_url,
     :instagram_url,
+    :linkedin_url,
   ].freeze
 
   # Overwrite this method to customize how contacts are displayed

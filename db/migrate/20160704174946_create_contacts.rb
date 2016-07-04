@@ -5,6 +5,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :twitter_url
       t.string :github_url
       t.string :instagram_url
+      t.string :linkedin_url
       t.timestamps null: false
     end
   end
