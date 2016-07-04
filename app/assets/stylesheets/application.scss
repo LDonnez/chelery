@@ -11,11 +11,12 @@
  * file per style scope.
  *
  *= require blueimp-gallery-all
- *= require fonts
  *= require_self
  *= require foundation_and_overrides
  *= require_tree .
 */
+
+@import  "fonts"
 
 body, html {
   margin: 0 auto;
