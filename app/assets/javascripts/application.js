@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require blueimp-gallery-all
+//= require navigation
 //= require turbolinks
-//= require_tree .
 //
 $(function(){ $(document).foundation(); });
