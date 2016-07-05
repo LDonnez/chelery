@@ -13,13 +13,11 @@
  *= require photoswipe
  *= require foundation_and_overrides
  *= require_self
+ *= require_tree .
 */
 
 @import "fonts";
 @import "font-awesome";
-@import "navigation";
-@import "main";
-@import "galleries";
 
 body, html {
   margin: 0 auto;
