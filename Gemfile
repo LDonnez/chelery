@@ -30,7 +30,7 @@ gem "devise"
 gem "bourbon"
 gem 'capistrano-passenger'
 gem 'ckeditor'
-gem 'blueimp-gallery'
+gem 'photoswipe-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

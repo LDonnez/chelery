@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-//= require blueimp-gallery-all
-//= require navigation
 //= require turbolinks
+//= require foundation
+//= require photoswipe
+//= require navigation
+//= require galleries
 //
 $(function(){ $(document).foundation(); });
