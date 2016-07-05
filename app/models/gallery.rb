@@ -1,3 +1,5 @@
 class Gallery < ActiveRecord::Base
- has_and_belongs_to_many :photos, dependent: :destroy
+  extend FriendlyId
+  has_and_belongs_to_many :photos, dependent: :destroy
+  friendly_id :title, use: [:slugged, :finders]
 end
