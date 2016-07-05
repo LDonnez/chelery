@@ -14,6 +14,7 @@ class PhotoDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     photo: Field::PaperclipField,
+    dimensions: Field::String,
     photo_file_name: Field::String,
     photo_content_type: Field::String,
     photo_file_size: Field::String,
@@ -38,6 +39,7 @@ class PhotoDashboard < Administrate::BaseDashboard
     :title,
     :created_at,
     :updated_at,
+    :dimensions,
     :photo,
   ]
 
