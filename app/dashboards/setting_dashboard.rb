@@ -9,6 +9,7 @@ class SettingDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    title: Field::String,
     headline: Field::String,
     subline: Field::String,
     header_text: TextareaField,
@@ -41,6 +42,7 @@ class SettingDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
+    :title,
     :headline,
     :subline,
     :header_text,
@@ -59,6 +61,7 @@ class SettingDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :title,
     :headline,
     :subline,
     :email,
