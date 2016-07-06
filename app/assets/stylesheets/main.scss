@@ -20,6 +20,18 @@
 .galleries {
   margin-top: 1em;
   margin-bottom: 10em;
+  max-height: 80%;
+}
+
+.galleries label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: brandon-light;
+  font-size: 1.5em;
+  border: 1px solid #b9b1b0;
+  text-align: center;
+  cursor: pointer;
+  color: #7e7a79;
 }
 
 .gallery-photo {
@@ -67,7 +79,7 @@ h3 {
   text-align: center;
   font-size: 2.5em;
   margin-top: 0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 p {
