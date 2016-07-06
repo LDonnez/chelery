@@ -14,7 +14,7 @@
  *= require foundation_and_overrides
  *= require_self
  *= require_tree .
-*/
+ */
 
 @import "fonts";
 @import "font-awesome";
@@ -31,4 +31,36 @@ a {
   color: black;
   text-decoration: none;
   outline: 0;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 20em;
+}
+
+footer p {
+  position: relative;
+  text-align: center;
+  font-family: brandon-light;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+footer span {
+  position: relative;
+  text-align: center;
+  font-family: brandon-light;
+  font-size: 1.4em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+footer a {
+  margin-right: 0.5em;
 }
