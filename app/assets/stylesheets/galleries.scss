@@ -1,18 +1,27 @@
 .my-gallery {
   width: 100%;
-  float: left;
+  text-align: center;
 }
+
 .my-gallery img {
   width: 100%;
   height: auto;
 }
+
 .my-gallery figure {
-  display: block;
-  float: left;
+  display: inline-block;
   margin: 0 5px 5px 0;
-  width: 150px;
+  float: none;
+  width: 20em;
 }
+
 .my-gallery figcaption {
   display: none;
+}
+
+.gallery {
+  margin-top: 5em;
+  height: 80%;
+  margin-bottom: 5em;
 }
 
