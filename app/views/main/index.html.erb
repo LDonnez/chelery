@@ -1,19 +1,21 @@
 <section id="header" class="header" style="background-image: url('<%=@settings.header_image.url(:large)%>')">
   <div class="container">
     <div class="headtitle row">
-      <div class="small-10 small-centered columns"> <h1><%=@settings.headline%></h1></div>
+      <div class="small-12 medium-12 large-12 small-centered medium-centered large-centered columns"> <h1><%=@settings.headline%></h1></div>
     </div>
     <div class="subtitle row">
-      <div class="small-10 small-centered columns"> <h2><%=@settings.subline%></h2></div>
+      <div class="small-12 medium-12 large-12 small-centered medium-centered large-centered columns"> <h2><%=@settings.subline%></h2></div>
     </div>
     <div class="info row">
-      <div class="small-10 small-centered columns"><%=@settings.header_text.html_safe%></div>
+      <div class="small-12 small-centered columns"><%=@settings.header_text.html_safe%></div>
     </div>
   </div>
 </section>
 <section id="galleries" class="galleries">
+<div class="row small-12 medium-12 large-12 small-centered medium-centered large-centered">
   <h3 class="text-center">GALLERY</h3>
-      <div class="row  small-up-1 medium-up-3 large-up-5 text-center">
+</div>
+      <div class="row  small-up-12 medium-up-3 large-up-4 text-center">
         <hr>
         <% @galleries.each do |g| %>
           <div class="column">
