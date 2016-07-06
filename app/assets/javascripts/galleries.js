@@ -140,6 +140,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     // define options (if needed)
     options = {
       history: false,
+      showHideOpacity:true,
+      showAnimationDuration:0,
       // define gallery index (for URL)
       galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
