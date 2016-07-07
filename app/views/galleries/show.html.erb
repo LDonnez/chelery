@@ -46,7 +46,6 @@
       </div>
   </div>
   <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    <div class="row">
         <% @photos.each do |p| %>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="<%= p.photo(:original) %>" itemprop="contentUrl" data-size=<%=p.dimensions%>>
@@ -55,6 +54,5 @@
             <figcaption itemprop="caption description"><%= p.title %></figcaption>
           </figure>
         <% end %>
-    </div>
   </div>
 </section>

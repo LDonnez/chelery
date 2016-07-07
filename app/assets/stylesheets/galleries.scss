@@ -10,9 +10,8 @@
 
 .my-gallery figure {
   display: inline-block;
-  margin: 0 5px 5px 0;
   float: none;
-  width: 20em;
+  max-width: 100%;
 }
 
 .my-gallery figcaption {
@@ -23,5 +22,6 @@
   margin-top: 5em;
   margin-bottom: 5em;
   display: relative;
+  max-width: 100%;
 }
 
