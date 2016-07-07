@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require photoswipe
 //= require turbolinks
 //= require foundation
-//= require photoswipe
 //= require navigation
 //= require galleries
 //
