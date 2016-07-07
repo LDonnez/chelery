@@ -35,17 +35,16 @@
   color: #7e7a79;
 }
 
+.galleries label:hover {
+  background-color: #F2F2F2;
+}
+
 .gallery-photo {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.photo-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
 }
 
 .gallery-photo:hover {
