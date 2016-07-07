@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require navigation
 //= require photoswipe
 //= require turbolinks
 //= require foundation
-//= require navigation
 //= require galleries
 //
 $(function(){ $(document).foundation(); });
