@@ -1,3 +1,4 @@
+var ready = function() {
 $(window).scroll(function() {
 
   if ($(window).scrollTop() > 50) {
@@ -31,3 +32,6 @@ $('nav a').on('click', function(event) {
   }, 500);
   event.preventDefault();
 });
+}
+$(document).ready(ready);
+$(document).on('page:load', ready);
