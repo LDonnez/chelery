@@ -17,7 +17,7 @@ class PhotoDashboard < Administrate::BaseDashboard
     dimensions: Field::String,
     photo_file_name: Field::String,
     photo_content_type: Field::String,
-    photo_file_size: Field::String,
+    photo_file_size: Field::Number,
     photo_updated_at: Field::DateTime,
   }
 
