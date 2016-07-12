@@ -15,10 +15,11 @@ module Admin
     # for more information
     def create
       title = params[:photo][:title] unless params[:photo][:title].empty?
+      galleries = Gallery.find params[:photo][:gallery_ids].reject(&:empty?)
       respond_to do |format|
         if params[:photos]
           params[:photos].each do |photo|
-            @photo = Photo.new(photo: photo, title: title).save
+            @photo = Photo.create(photo: photo, title: title, galleries: galleries)
           end
           format.html { redirect_to action: "index" }
           format.json { render json: @photo, status: :created, location: @photo }
