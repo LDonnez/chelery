@@ -1,4 +1,4 @@
-<section id="header" class="header" style="background-image: url('<%=@settings.header_image.url(:large)%>')">
+<section id="header" class="header" style="background-image: url('<%=@settings.header_image.url(:large) unless @settings.header_image.nil? %>')">
   <div class="container">
     <div class="headtitle row">
       <div class="small-12 medium-12 large-12 small-centered medium-centered large-centered columns"> <h1><%=@settings.headline%></h1></div>
