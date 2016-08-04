@@ -7,7 +7,7 @@
       <div class="small-12 medium-12 large-12 small-centered medium-centered large-centered columns"> <h2><%=@settings.subline%></h2></div>
     </div>
     <div class="info row">
-      <div class="small-12 small-centered columns"><%=@settings.header_text.html_safe%></div>
+      <div class="small-12 small-centered columns"><%=@settings.header_text.html_safe unless @settings.header_text.nil? %></div>
     </div>
   </div>
 </section>
