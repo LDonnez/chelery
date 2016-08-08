@@ -119,3 +119,26 @@ h3 {
   padding: 10px;
   display: block;
 }
+
+@media only screen and (max-width: 616px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+
+@media only screen and (max-width: 416px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+}
