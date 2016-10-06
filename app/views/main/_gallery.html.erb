@@ -1,0 +1,20 @@
+<section id="galleries" class="galleries">
+  <div class="row small-12 medium-12 large-12 small-centered medium-centered large-centered">
+    <h3 class="text-center">GALLERY</h3>
+  </div>
+  <div class="row  small-up-12 medium-up-3 large-up-4 text-center">
+    <hr>
+    <% @galleries.each do |g| %>
+      <% if g.photos.first %>
+        <div class="column">
+          <%= link_to g do%>
+            <%= image_tag g.photos.first.photo(:medium), class: "gallery-photo" %>
+            <%= label_tag g.title, nil, class: "photo-title" %>
+          <% end %>
+          </a>
+        </div>
+      <% end %>
+    <% end %>
+    <hr>
+  </div>
+</section>

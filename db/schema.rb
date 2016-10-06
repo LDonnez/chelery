@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706200527) do
+ActiveRecord::Schema.define(version: 20161006193923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "activities", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "agenda_id"
+    t.datetime "starts_at"
+    t.datetime "stops_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "agendas", force: :cascade do |t|
+    t.string   "title"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -60,6 +76,24 @@ ActiveRecord::Schema.define(version: 20160706200527) do
 
   add_index "galleries_photos", ["gallery_id", "photo_id"], name: "index_galleries_photos_on_gallery_id_and_photo_id", using: :btree
 
+  create_table "groups", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "member_id"
+  end
+
+  add_index "groups", ["member_id"], name: "index_groups_on_member_id", using: :btree
+
+  create_table "members", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "group_id"
+  end
+
+  add_index "members", ["group_id"], name: "index_members_on_group_id", using: :btree
+
   create_table "photos", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at",         null: false
@@ -69,6 +103,19 @@ ActiveRecord::Schema.define(version: 20160706200527) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.string   "dimensions"
+  end
+
+  create_table "practical_infos", force: :cascade do |t|
+    t.text     "info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rankings", force: :cascade do |t|
+    t.integer  "points"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "settings", force: :cascade do |t|
@@ -88,6 +135,17 @@ ActiveRecord::Schema.define(version: 20160706200527) do
     t.string   "linkedin_url"
     t.string   "email"
     t.string   "title"
+    t.boolean  "enable_galleries"
+    t.boolean  "enable_groups"
+    t.boolean  "enable_ranking"
+    t.boolean  "enable_news"
+    t.boolean  "enable_rankings"
+    t.boolean  "enable_agendas"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+    t.boolean  "enable_practical_infos"
   end
 
   create_table "users", force: :cascade do |t|
@@ -110,4 +168,6 @@ ActiveRecord::Schema.define(version: 20160706200527) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "groups", "members"
+  add_foreign_key "members", "groups"
 end

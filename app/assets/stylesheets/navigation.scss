@@ -29,37 +29,33 @@
 }
 
 .logo {
-  width: 50px;
-  font-size: 25px;
   color: #8f8f8f;
-  text-transform: uppercase;
   float: left;
-  display: block;
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 766px) {
-  .logo {
-    float: none;
-  }
+  background-image: image_url("avatar.png")
 }
 
+.logo img {
+  height: 40px;
+  width: 45px;
+  margin-bottom: 20em;
+}
+
+
 nav {
-  float: right;
-  width: 70%;
+  width: 100%;
 }
 @media only screen and (max-width: 766px) {
   nav {
     width: 100%;
   }
 }
+
 nav ul {
   list-style: none;
   overflow: hidden;
-  text-align: right;
-  float: left;
+  text-align: center;
 }
+
 @media only screen and (max-width: 766px) {
   nav ul {
     padding-top: 10px;
@@ -72,8 +68,15 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-left: 25px;
-  line-height: 1.5;
+  line-height: 1;
+  padding-right: 1.5em;
+  border-right: 1px solid #000;
 }
+
+nav ul li:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (max-width: 766px) {
   nav ul li {
     width: 100%;
@@ -87,7 +90,6 @@ nav ul a {
   font-size: 17px;
   opacity: 0.8;
   text-decoration: none;
-  border-bottom: 1px solid black;
 }
 
 nav ul a:hover {

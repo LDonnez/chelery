@@ -1,0 +1,10 @@
+<section id="practical_infos" class="practical_infos">
+  <div class="row small-up-12 medium-up-2 large-up-2 text-center">
+    <% @practical_infos.each do |pi| %>
+      <div class="column">
+        <%= pi.info.html_safe if pi.info %>
+      </div>
+    <% end %>
+  </div>
+  <hr>
+</section>

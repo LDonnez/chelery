@@ -22,11 +22,21 @@ class SettingDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     header_image: Field::ImageField,
+    logo: Field::PaperclipField,
+    logo_content_type: Field::String,
+    logo_file_size: Field::String,
+    logo_file_name: Field::String,
     header_image_file_name: Field::String,
     header_content_type: Field::String,
     header_file_size: Field::String,
     header_updated_at: Field::DateTime,
-  }
+    enable_galleries: Field::Boolean,
+    enable_groups: Field::Boolean,
+    enable_rankings: Field::Boolean,
+    enable_news: Field::Boolean,
+    enable_agendas: Field::Boolean,
+    enable_practical_infos: Field::Boolean
+  }.freeze
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
@@ -36,8 +46,8 @@ class SettingDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :headline,
-    :subline,
-  ]
+    :subline
+  ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
@@ -55,7 +65,14 @@ class SettingDashboard < Administrate::BaseDashboard
     :created_at,
     :updated_at,
     :header_image,
-  ]
+    :logo,
+    :enable_galleries,
+    :enable_groups,
+    :enable_rankings,
+    :enable_news,
+    :enable_agendas,
+    :enable_practical_infos
+  ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
@@ -72,7 +89,14 @@ class SettingDashboard < Administrate::BaseDashboard
     :linkedin_url,
     :header_text,
     :header_image,
-  ]
+    :logo,
+    :enable_galleries,
+    :enable_groups,
+    :enable_news,
+    :enable_agendas,
+    :enable_rankings,
+    :enable_practical_infos
+  ].freeze
 
   # Overwrite this method to customize how settings are displayed
   # across all pages of the admin dashboard.

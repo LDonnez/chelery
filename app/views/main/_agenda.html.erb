@@ -1,0 +1,20 @@
+<section id="agendas" class="agendas">
+  <div class="row small-12 medium-12 large-12 small-centered medium-centered large-centered">
+    <h3 class="text-center">AGENDA</h3>
+  </div>
+  <div class="row  small-up-12 medium-up-3 large-up-4 text-center">
+    <% @agendas.each do |a| %>
+      <div class="column">
+        <h4 class="text-center"><%= a.title %></h4>
+        <h4 class="text-center"><%= a.date.strftime('%a %d %b')%></h4>
+        <% a.activities.order(starts_at: :asc).each do |act| %>
+          <div class="activity">
+            <%= label_tag act.name, nil, class:"activity-name" %>
+            <%= label_tag "#{act.starts_at.to_s(:time) if act.starts_at} - #{act.stops_at.to_s(:time) if act.stops_at }", nil, class: "activity-time"%>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <hr>
+</section>
