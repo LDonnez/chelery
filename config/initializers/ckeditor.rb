@@ -9,7 +9,6 @@ Ckeditor.setup do |config|
   Ckeditor.setup do |config|
     # //cdn.ckeditor.com/<version.number>/<distribution>/ckeditor.js
     config.cdn_url = "//cdn.ckeditor.com/4.5.6/standard/ckeditor.js"
-    config.assets_plugins = ['colorbutton']
   end
   # Allowed image file types for upload.
   # Set to nil or [] (empty array) for all file types
