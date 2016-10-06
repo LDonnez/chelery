@@ -28,9 +28,9 @@ module ApplicationHelper
   def groups_link
     return unless @settings.enable_groups
     if params[:controller] == "main"
-      link_to "Groups", "#groups"
+      link_to "Groepen", "#groups"
     else
-      link_to "Groups", "#{root_url}#groups"
+      link_to "Groepen", "#{root_url}#groups"
     end
   end
 
@@ -39,7 +39,7 @@ module ApplicationHelper
     if params[:controller] == "main"
       link_to "Info", "#practical_infos"
     else
-      link_to "practical_infos", "#{root_url}#practical_infos"
+      link_to "Info", "#{root_url}#practical_infos"
     end
   end
   def rankings_link
