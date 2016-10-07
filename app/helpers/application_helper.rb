@@ -8,7 +8,6 @@ module ApplicationHelper
   end
 
   def galleries_link
-    return unless @settings.enable_galleries
     if params[:controller] == "main"
       link_to "Gallery", "#galleries"
     else
@@ -17,7 +16,6 @@ module ApplicationHelper
   end
 
   def agendas_link
-    return unless @settings.enable_agendas
     if params[:controller] == "main"
       link_to "Agenda", "#agendas"
     else
@@ -26,7 +24,6 @@ module ApplicationHelper
   end
 
   def groups_link
-    return unless @settings.enable_groups
     if params[:controller] == "main"
       link_to "Groepen", "#groups"
     else
@@ -35,15 +32,14 @@ module ApplicationHelper
   end
 
   def practical_info_link
-    return unless @settings.enable_practical_infos
     if params[:controller] == "main"
       link_to "Info", "#practical_infos"
     else
       link_to "Info", "#{root_url}#practical_infos"
     end
   end
+
   def rankings_link
-    return unless @settings.enable_rankings
     if params[:controller] == "main"
       link_to "Leaderboard", "#rankings"
     else
