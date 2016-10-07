@@ -10,6 +10,7 @@ class PracticalInfoDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     info: TextareaField,
+    sorter: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -21,6 +22,7 @@ class PracticalInfoDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
+    :sorter,
     :info,
     :created_at,
     :updated_at,
@@ -30,6 +32,7 @@ class PracticalInfoDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
+    :sorter,
     :info,
     :created_at,
     :updated_at,
@@ -39,6 +42,7 @@ class PracticalInfoDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :sorter,
     :info,
   ].freeze
 
