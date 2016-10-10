@@ -11,8 +11,8 @@
     </div>
   </div>
 </section>
-<%= render partial: "gallery" if @settings.enable_galleries %>
 <%= render partial: "agenda" if @settings.enable_agendas %>
 <%= render partial: "group" if @settings.enable_groups%>
 <%= render partial: "ranking" if @settings.enable_rankings%>
+<%= render partial: "gallery" if @settings.enable_galleries %>
 <%= render partial: "practical_info" if @settings.enable_practical_infos%>
