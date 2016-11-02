@@ -1,4 +1,4 @@
-class Photo < ActiveRecord::Base
+class Photo < ApplicationRecord
   before_create :default_name
   before_save :extract_dimensions
   serialize :dimensions

@@ -17,5 +17,13 @@ module Admin
     # def records_per_page
     #   params[:per_page] || 20
     # end
+    # Remove this method when FriendlyID gems updates the gem for rails 5 support.
+    def find_resource(param)
+      if resource_class == Gallery
+        resource_class.friendly.find(param)
+      else
+        resource_class.find(param)
+      end
+    end
   end
 end
