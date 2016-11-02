@@ -1,2 +1,2 @@
-class PracticalInfo < ActiveRecord::Base
+class PracticalInfo < ApplicationRecord
 end

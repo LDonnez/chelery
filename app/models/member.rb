@@ -1,3 +1,3 @@
-class Member < ActiveRecord::Base
+class Member < ApplicationRecord
   belongs_to :group
 end

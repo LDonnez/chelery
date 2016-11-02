@@ -1,3 +1,3 @@
-class Agenda < ActiveRecord::Base
+class Agenda < ApplicationRecord
   has_many :activities
 end
