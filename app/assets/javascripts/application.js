@@ -14,8 +14,8 @@
 //= require jquery_ujs
 //= require navigation
 //= require galleries
-//= require photoswipe
 //= require turbolinks
 //= require foundation
+//= require photoswipe
 //
 $(function(){ $(document).foundation(); });
